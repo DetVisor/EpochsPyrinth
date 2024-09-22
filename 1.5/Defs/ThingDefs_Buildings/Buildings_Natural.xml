@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>DV_Filth_Pyrinth</defName>
+    <label>pyrinth rubble</label>
+    <graphicData>
+      <texPath>Things/Building/Filth</texPath>
+    </graphicData>
+    <filth>
+      <disappearsInDays>45~50</disappearsInDays>
+      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+    </filth>
+  </ThingDef>
+
+  <ThingDef ParentName="RockBase">
+    <defName>DV_MineablePyrinth</defName>
+    <label>pyrinth</label>
+    <description>Opaque, crystallized pyrinth, warm to the touch. It glows and is fairly volatile in this form.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/Pyrinth_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <filthLeaving>DV_Filth_Pyrinth</filthLeaving>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>DV_Pyrinth</mineableThing>
+      <mineableYield>10</mineableYield>
+      <mineableScatterCommonality>0.1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>5~6</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+    <comps inherit="False">
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(192,117,77,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2.5</heatPerSecond>
+        <heatPushMaxTemperature>20</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.1</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <startWickOnDamageTaken>
+          <li>Flame</li>
+        </startWickOnDamageTaken>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>DV_Filth_Pyrinth</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>200~300</wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
