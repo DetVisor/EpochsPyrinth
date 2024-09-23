@@ -16,7 +16,7 @@
   <ThingDef ParentName="RockBase">
     <defName>DV_MineablePyrinth</defName>
     <label>pyrinth</label>
-    <description>Opaque, crystallized pyrinth, warm to the touch. It glows and is fairly volatile in this form.</description>
+    <description>Opaque, crystallized pyrinth, warm to the touch. It glows and emits little heat.</description>
     <graphicData>
       <texPath>Things/Building/Linked/Pyrinth_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -43,17 +43,6 @@
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>2.5</heatPerSecond>
         <heatPushMaxTemperature>20</heatPushMaxTemperature>
-      </li>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>1.1</explosiveRadius>
-        <explosiveDamageType>Flame</explosiveDamageType>
-        <startWickOnDamageTaken>
-          <li>Flame</li>
-        </startWickOnDamageTaken>
-        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-        <preExplosionSpawnThingDef>DV_Filth_Pyrinth</preExplosionSpawnThingDef>
-        <preExplosionSpawnChance>1</preExplosionSpawnChance>
-        <wickTicks>200~300</wickTicks>
       </li>
     </comps>
   </ThingDef>

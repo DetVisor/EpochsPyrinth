@@ -4,7 +4,7 @@
 <ThingDef ParentName="ResourceBase">
     <defName>DV_Pyrinth</defName>
     <label>pyrinth</label>
-    <description>A warm, bright orange crystal. Rare and beautiful, it has simple magical properties. It innately glows and emits warmth which means it can be used to make torches or to heat up rooms.</description>
+    <description>A warm, bright orange crystal. Rare and beautiful, it has simple magical properties. It glows and emits warmth innately which means it can be used to make torches or to heat up rooms.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Pyrinth</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

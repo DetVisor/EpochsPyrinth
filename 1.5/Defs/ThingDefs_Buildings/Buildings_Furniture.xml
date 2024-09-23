@@ -74,7 +74,7 @@
   <ThingDef Name="DV_PyrinthLamp" ParentName="DV_PyrinthTorchBase">
     <defName>DV_PyrinthLamp</defName>
     <label>pyrinth torch</label>
-    <description>A wooden stick topped with a fist-sized pyrinth shard for lighting an area. People need light to move and work at full speed. Doesn't need to be refueled, ever. Produces a small amount of heat.</description>
+    <description>A stick topped with a fist-sized pyrinth shard for lighting an area. People need light to move and work at full speed. Doesn't need to be refueled, ever. Produces a small amount of heat.</description>
     <graphicData>
       <texPath>Things/Building/Misc/PyrinthLamp</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -211,7 +211,7 @@
     </stuffCategories>
     <costStuffCount>50</costStuffCount>
     <costList>
-      <DV_Pyrinth>15</DV_Pyrinth>
+      <DV_Pyrinth>25</DV_Pyrinth>
     </costList>
     <placeWorkers>
       <li>PlaceWorker_Heater</li>
