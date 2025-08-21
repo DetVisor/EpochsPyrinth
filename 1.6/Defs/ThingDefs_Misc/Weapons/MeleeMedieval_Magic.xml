@@ -9,6 +9,7 @@
     <smeltable>true</smeltable>
     <techLevel>Medieval</techLevel>
     <statBases>
+      <WorkToMake>5000</WorkToMake>
       <Mass>10</Mass>
     </statBases>
     <weaponTags>
@@ -61,7 +62,12 @@
       </li>
     </tools>
     <recipeMaker>
+      <unfinishedThingDef Inherit="False"/>
       <researchPrerequisite>LongBlades</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
