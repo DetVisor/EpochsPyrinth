@@ -2,7 +2,6 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
-    <exclude>1.6\Patches\MO_Cost_Patch.xml</exclude>
     <exclude>About\img1.png</exclude>
     <exclude>About\img2.png</exclude>
     <exclude>About\img3.png</exclude>
